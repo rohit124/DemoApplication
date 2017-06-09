@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/profileBackGround"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/feedPostNetworkImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|top"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo_image" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageLayout">
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:text="EMPTINESS FT.JUSTIN TIBLEKAR"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameLayout"
+                android:layout_marginTop="3dp"
+                android:text="18 HOURS AGO"
+                android:textColor="@color/bordercolornew"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:id="@+id/add"
+                style="@style/wrapContent"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/description"
+                    style="@style/wrapContent"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    android:textColor="@color/bordercolornew"
+                    android:textSize="13sp"
+
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <!--<include-->
+        <!--android:id="@+id/tootbarLayout"-->
+        <!--layout="@layout/toolbar_test"></include>-->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:id="@+id/dotImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/firstDot"
+                style="@style/indicatorView" />
+
+            <ImageView
+                android:id="@+id/secondDot"
+                style="@style/indicatorView"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/thirdDot"
+                style="@style/indicatorView"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/fourthDot"
+                style="@style/indicatorView"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/fifthDot"
+                style="@style/indicatorView"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tabFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/appoint_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/profileBackGround"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/customTabLayout">
+
+        </android.support.design.widget.TabLayout>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pagerTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabFrameLayout"
+        android:background="@color/profileBackGround">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

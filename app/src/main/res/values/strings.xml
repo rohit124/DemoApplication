@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawable_open"></string>
+    <string name="drawable_close"></string>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/slider_icon</item>
+    </array>
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+    </string-array>
+</resources>

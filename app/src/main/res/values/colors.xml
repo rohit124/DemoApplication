@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6137</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="profileBackGround">#f6f5f8</color>
+    <color name="black">#000</color>
+    <color name="bordercolornew">#545454</color>
+    <color name="green">#4db3ab</color>
+    <color name="header">#252c40</color>
+</resources>
